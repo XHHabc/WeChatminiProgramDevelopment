@@ -1,0 +1,174 @@
+/* pages/home/homeContent/homeContent/homeDetail.wxss */
+page{
+    background-color:#EFEFEF;
+}
+.slide-image
+{
+    width: 100%;
+    height: 100%;
+}
+
+/*商品详情*/
+.introduce
+{
+    width: 100%-40rpx;
+    /*height: 120rpx;*/
+    background: #FFFFFF;
+    margin-top:5rpx;
+    padding: 20rpx 20rpx;
+    /*padding-right: 20rpx;*/
+}
+.nameTX
+{
+    font-size: 30rpx;
+    text-align: left;
+    display: block;
+    line-height: 35rpx;
+    /*margin-right: 20rpx;*/
+    /*background-color: red;*/
+    /*width: 100%-40rpx;*/
+    /*margin-left: 20rpx;
+ 
+    /*margin: 20rpx 20rpx;*/
+}
+.priceTX
+{
+    color: #1AABA8;
+    font-size: 32rpx;
+    display: block;
+    margin-top: 20rpx;
+
+}
+
+/*选择规格*/
+.Specification
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    width: 100%;
+    height: 300rpx;
+    background-color: #FFFFFF;
+    margin-top: 20rpx;
+
+}
+.OneSpecification
+{
+    width: 60rpx;
+    height: 50rpx;
+    background-color: #FFFFFF;
+    color: #9D9D9D;
+    font-size: 24rpx;
+    margin: 20rpx 15rpx; 
+    line-height: 45rpx;
+    text-align: center;
+}
+.SpecificationBT
+{
+    /*display:inline-block;*/
+    
+    width: 60rpx;
+    height: 50rpx;
+    /*background-color:#EFEFEF;*/
+    margin: 20rpx 15rpx; 
+    border-radius: 10rpx;
+    line-height: 50rpx;
+    text-align: center;
+    font-size: 26rpx;
+    color: #000000;   
+}
+
+.jianBT
+{
+    width: 50rpx;
+    height: 52rpx;
+    background-color:#EFEFEF;
+    margin: 20rpx -1rpx; 
+    /*margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    margin-left: 15rpx;*/
+    border-radius: 10rpx;
+    line-height: 50rpx;
+    text-align: center;
+    font-size: 26rpx;
+    color: #000000; 
+    float: left;
+
+}
+.inputTX
+{
+    background-color: #EFEFEF;
+    width: 100rpx;
+    height: 52rpx;
+    margin: 20rpx -2rpx; 
+    border-radius: 10rpx;
+    line-height: 40rpx;
+    text-align: center;
+    font-size: 26rpx;
+    /*border: 1prx solid ;*/
+}
+.amount
+{
+    display: block;
+    background-color: #EFEFEF;
+    width: 400rpx;
+    height: 52rpx;
+    margin: 20rpx 15rpx; 
+    border-radius: 10rpx;
+    line-height: 50rpx;
+    font-size: 26rpx;
+    padding-left: 20rpx;
+}
+/*地址*/
+.address
+{
+    width: 100%-40rpx;
+    /*height: 300rpx;*/
+    background-color: #FFFFFF;
+    margin-top: 20rpx;
+    font-size: 30rpx;
+    line-height: 50rpx;
+    padding: 0rpx 20rpx;
+    text-decoration: underline;
+}
+/*评论*/
+.comment
+{
+    width: 100%;
+    height: 400rpx;
+    background-color: #FFFFFF;
+    margin-top: 20rpx;
+}
+
+/*购买键*/
+.payView
+{
+    width: 100%;
+    height: 80rpx;
+    bottom: 0rpx;
+    position: fixed;
+}
+.payCarBT
+{
+    width: 50%;
+    height: 80rpx;
+    display: inline-block;
+    background-color: #E8D279;
+    text-align: center;
+    line-height: 80rpx;
+    font-size: 32rpx;
+    color: #FFFFFF;
+
+}
+.payBT
+{
+    width: 50%;
+    height: 80rpx;
+    display: inline-block;
+    background-color: #1AABA8;
+    text-align: center;
+    line-height: 80rpx;
+    font-size: 32rpx;
+    color: #FFFFFF;
+}

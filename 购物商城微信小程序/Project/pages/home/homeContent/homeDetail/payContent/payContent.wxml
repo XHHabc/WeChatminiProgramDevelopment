@@ -1,0 +1,39 @@
+<!--pages/home/homeContent/homeDetail/payContent/payContent.wxml-->
+
+<!-- 购买地址 -->
+<view class="addressContent">{{productContent.data.address}}</view>
+
+<view class="productContent">
+
+     <view class="tr">
+     <view class="td">
+        <!-- 订单内容 -->
+     <view class="statusContent">
+     <view class="orderStatus">
+     状态：<text class="statuTxt">待支付</text>
+     </view>
+     <view class="orderStatus">
+     总价：<text class="priceTxt">¥{{productContent.data.price}}</text>
+     </view>
+
+
+     </view>
+ 
+<!-- 订单详情 -->
+     <view class="content">
+     <image class="orderImage" src="{{iconImage}}"></image>
+     <view class="orderContent">{{productContent.data.discription}}
+     </view>
+      <view class="numberText">
+     1件
+     </view>
+     </view>
+     </view>
+    </view>
+
+    <button class="wechatpayBT">微信支付</button>
+    <button class="unpayBT">支付宝支付</button>
+
+
+
+</view>

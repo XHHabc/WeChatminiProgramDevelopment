@@ -1,0 +1,25 @@
+
+AppID(小程序ID)	wx4ce2cc37172d9805
+
+
+mysql启动流程：
+管理员权限下cmd里，
+1：命令mysqld -install安装服务；
+2：命令net start mysql启动服务；
+然后navicat of mysql就可以连接上了。
+
+
+在bin文件路径下运行命令mysqld.exe -install（使mysql出现在电脑服务启动里）
+
+//数据库获取全部数据的方法（
+$result=mysqli_query($con,$sql);
+// 获取数据
+mysqli_fetch_all($result,MYSQLI_ASSOC);
+）
+
+
+
+https://bkimg.cdn.bcebos.com/pic/7dd98d1001e939013c6aea1776ec54e736d196aa?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto
+
+
+navicat的数据库多表建立外键连接，需要把要设置的列设置为主键（留意建立外键时自动生成的索引，必要时将旧自动建立的索引删除以免冲突）

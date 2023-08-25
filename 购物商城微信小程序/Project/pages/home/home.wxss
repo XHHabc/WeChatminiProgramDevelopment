@@ -1,0 +1,120 @@
+/* pages/home/home.wxss */
+.headerView
+{
+    width: 100%;
+    height:280rpx;
+    background-color: #1AABA8;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+.addressView
+{
+  height: 40rpx;
+}
+
+/* 地址的样式 */
+.addressIMG
+{
+  width: 35rpx;
+  height: 35rpx;
+  float: left;
+  margin-left: 20rpx;
+
+}
+.addressTX
+{
+  display: inline-block;
+  font-size: 25rpx;
+  margin-left: 20rpx;
+  color: #FFFFFF;
+  float: left;
+  line-height: 40rpx;
+}
+/* 搜索框样式 */
+.textArea
+{
+    clear: left;
+    display: inline-block;
+    background-color:#FFFFFF;
+    height: 20%;
+    width: 70%;
+    border-radius:30rpx;
+    font: 10rpx;
+    text-align: center; 
+    margin-top: 5%; 
+}
+.placeholderClass
+{
+    font-size: 20rpx;
+}
+/* 商品主体框架 */
+.table {
+  border: 0px solid darkgray;
+  margin-top: 280rpx;
+
+}
+.tr {
+  display: flex;
+  width: 100%;
+
+  
+}
+.td {
+    width:100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+/* 单个商品详情样式 */
+.contentIMG
+{
+  width: 80%;
+  height: 140px;
+  display: block;
+  margin:0  auto;
+}
+.contentTitle
+{
+  display: block;
+  font-size: 40rpx;
+  font-weight:bold;
+  margin:5px 0;
+  font-family: "Cooper Black";
+}
+.contentTX
+{
+  font-size: 30rpx;
+  font-weight:lighter;
+  margin:10px 10%;
+  text-align: justify;
+  text-justify:inter-word;
+}
+.price
+{
+  color: red;
+}
+.navigator-hover {
+  color:blue;
+  background-color: #1AABA8;
+  text-decoration: underline;
+}
+.navigatorClass
+{
+  display: inline-block;
+  text-decoration: underline;
+  margin-left: 30rpx;
+  margin-top: 50rpx;
+  color: #4C4C4C;
+  font-size: 30rpx;
+  
+}
+.recommendView
+{
+  width: 70%;
+  margin-left: 15%;
+  text-align: left;
+
+}

@@ -1,0 +1,12 @@
+<!--pages/info/addAddress/addAddress.wxml-->
+
+<!--<view >-->
+  <textarea class="adressTX" placeholder-class="adressTXPlaceholder" placeholder="请填写您的详细地址 ＋＋ 收件人姓名 ＋＋ 手机号码" bindblur="addAddress" />
+<!--</view>-->
+
+<button class="addAddress" bindtap="addressContent" >
+添加收货信息（点两次）
+</button>
+<view>当前的地址存储信息：{{address}}</view>
+
+

@@ -1,0 +1,25 @@
+<!--pages/info/info.wxml-->
+<!--<view >-->
+<!--<view class="backgroundView">-->
+
+<view class="iconView">
+<image class="iconImage" src="{{userInfo.avatarUrl}}">
+</image>
+<view class="nameContent">
+{{userInfo.nickName}}
+</view>
+</view>
+
+
+       <navigator url="addAddress/addAddress" hover-class="navigator-hovers">
+       <view class="addressView">
+       <image class="addressImage" src="/pages/resources/address.png"></image>
+      <view class="contentTitle">收货信息管理 </view> 
+      <image class="rightImage" src="/pages/resources/right.png"></image>
+      </view>
+             
+       
+     </navigator>
+  
+<!--</view>-->
+<!--</view>-->

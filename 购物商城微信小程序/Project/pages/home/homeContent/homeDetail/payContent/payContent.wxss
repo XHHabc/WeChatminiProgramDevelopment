@@ -1,0 +1,110 @@
+/* pages/home/homeContent/homeDetail/payContent/payContent.wxss */
+page{
+    background-color:#EFEFEF;
+}
+/* 地址栏样式 */
+.addressContent
+{
+    background-color: #FFFFFF;
+    width: 100%-40rpx;
+    margin-top: 10rpx;
+    font-size: 30rpx;
+    padding: 20rpx 20rpx;
+    line-height: 45rpx;
+
+}
+/* 订单状态内容 */
+.productContent
+{
+    background-color: #1AABA8;
+    width: 100%;
+    margin-top: 3rpx;
+    height: 300rpx;
+}
+
+.tr {
+  display: flex;
+  width: 100%;
+}
+.td
+{
+    height: 300rpx;
+    width: 100%;
+    background-color: #E2E2E2;
+    margin-bottom: 8%;
+    position: relative;
+}
+.statusContent
+{
+    height:109rpx;
+    width:100%;
+    background-color: #FFFFFF;
+     vertical-align: middle;
+     padding: 10rpx 10rpx;
+}
+.orderStatus
+{
+    width: 60%;
+    height: 54rpx;
+    font-size: 28rpx;
+    color: #9D9D9D;
+    float: left;
+    line-height: 54rpx;
+}
+
+.statuTxt
+{
+    color: #1AABA8;
+}
+
+.priceTxt
+{
+    color: #000000;
+}
+
+/* 订单详情 */
+.content {
+    width:100%;
+    height: 190rpx;
+    background-color: #FFFFFF;   
+    margin-top: 3rpx;
+}
+
+.orderImage
+{
+    width: 180rpx;
+    height: 170rpx;
+    float: left;
+    margin: 10rpx 10rpx;
+}
+.orderContent
+{
+    text-align: left;
+    font-size: 28rpx;
+    font-family: "Apple LiGothic Medium";
+    line-height: 45rpx;
+    
+}
+.numberText
+{
+    font-size: 28rpx;
+    color: #9D9D9D;
+    line-height: 50rpx;
+    margin: 10rpx 10rpx;
+    text-align: left;
+}
+/* 支付按钮样式 */
+.wechatpayBT
+{
+    width: 90%rpx;
+    margin: 20rpx 20rpx;
+    font-size: 35rpx;
+    background-color: #1AABA8;
+}
+.unpayBT
+{
+    width: 90%rpx;
+    margin: 20rpx 20rpx;
+    font-size: 35rpx;
+}
+

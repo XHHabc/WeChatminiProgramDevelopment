@@ -1,0 +1,40 @@
+<!--pages/home/home.wxml-->
+<!--创建头部搜索-->
+
+<view class="headerView">
+<view class="addressView">
+  <!-- 地址定位（静态） -->
+<image class="addressIMG" src="/pages/resources/currentAddress.png"></image>
+<text class="addressTX">{{address}}</text>
+
+
+</view>
+  <input class="textArea" bindchange="searchGoods" placeholder="输入商品搜索：" placeholder-class="placeholderClass" />
+  <view class="recommendView">
+  <navigator wx:for="{{recommendList}}" url="homeContent/homeContent?id={{item}}" class="navigatorClass" hover-class="navigator-hover">
+       {{item}}
+  </navigator>
+
+  </view>
+       
+</view>
+<!--创建展示-->
+
+<view class="table">
+  <block wx:for="{{listData}}" ><!-- 在listData数据下 -->
+    <view class="tr">
+      <view class="td">
+       <navigator url="homeContent/homeContent?id={{item.type}}" hover-class="navigator-hovers">
+      <image class="contentIMG" src="{{item.imgPath}}" mode="scaleToFill"></image>
+      <text class="contentTitle">{{item.title}}</text>
+      <text class="price">￥{{item.price}}元</text>
+      <view class="contentTX">{{item.discription}} 
+     </view>
+     </navigator>
+     </view>
+  
+    </view>
+  </block>
+</view>
+
+

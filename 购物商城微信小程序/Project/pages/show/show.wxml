@@ -1,0 +1,43 @@
+<!--pages/show/show.wxml-->
+<!-- 头部类别 -->
+<view class="headerView">
+<view class="chooseView">
+<view class="order" bindtap="buyCar" style="color:{{buyCarColor}};background-color:{{buyCarBackgroundColor}}"><text>购物车</text></view>
+<view class="buyCar" bindtap="order" style="color:{{orderColor}};background-color:{{orderBackgroundColor}}"><text>订单</text></view>
+</view>
+</view>
+
+<!-- 订单情况 -->
+<view class="table">
+  <block wx:for="{{listData}}" >
+     <view class="td">
+
+     <view class="statusContent">
+     <view class="orderStatus">
+     状态：<text class="statuTxt">待支付</text>
+     </view>
+     <view class="orderStatus">
+     总价：<text class="priceTxt">¥{{item.price}}</text>
+     </view>
+
+     <button class="payBT" bindtap="goPay">去支付
+     </button>
+
+
+     </view>
+ <!-- 订单详情 -->
+
+     <view class="content">
+     <image class="orderImage" src="{{item.image}}"></image>
+  
+     <view class="orderContent">{{item.discription}}  {{item.size}}
+     </view>
+      <view class="numberText">
+     1件
+     </view>
+     </view>
+     </view>
+    
+   
+  </block>
+</view>

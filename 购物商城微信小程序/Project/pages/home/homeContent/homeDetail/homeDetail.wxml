@@ -1,0 +1,38 @@
+<!--pages/home/homeContent/homeContent/homeDetail.wxml-->
+<!-- 图片轮播需要根据情况改动数据库表结构 -->
+<swiper style="height:500rpx" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <image src="{{contentData.imgPath}}" style="height:500rpx"></image>
+</swiper>
+
+<!-- 商品描述 -->
+<view class="introduce">
+<text class="nameTX">{{contentData.discription}}</text>
+<text class="priceTX">{{contentData.price}}</text>
+</view>
+
+<view class="Specification">
+<!-- 尺寸选择部分 -->
+<view class="OneSpecification">尺寸</view>
+<view class="SpecificationBT"  wx:for="{{Specifications}}" style="background-color:{{item.color}}"  wx:key="{{item.key}}" id="{{index}}" bindtap="chose">
+{{item.size}}
+</view>
+<!-- 数量部分 -->
+<view class="OneSpecification">数量</view>
+<view class="jianBT" bindtap="numberChange" id="1">-</view>
+<input class="inputTX" placeholder="{{numberItem}}"/>
+<view class="jianBT" bindtap="numberChange" id="2">+</view>
+<view class="amount">已选择"{{numberItem}}"件,"{{numbersize}}"码的商品</view>
+</view>
+<!-- 地址部分 -->
+<view class="address">商品邮寄地址：{{address}}</view>
+<!-- 评论区（拓展部分） -->
+<view class="comment"></view>
+
+
+<!-- 下方按钮部分 -->
+<view class="payView">
+<view class="payCarBT" bindtap="addPayCar">加入购物车</view>
+<view class="payBT" bindtap="payContent">立即购买</view>
+</view>
+

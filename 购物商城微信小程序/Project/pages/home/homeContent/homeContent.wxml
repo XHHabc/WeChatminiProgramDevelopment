@@ -1,0 +1,34 @@
+<!--pages/home/homeContent/homeContent.wxml-->
+
+<view class="titleView">
+<view class="headerView">
+  <input class="textArea" placeholder="输入商品搜索：" placeholder-class="placeholderClass" />
+</view>
+<view class="changeV">
+<view class="change" bindtap="changeCondition" 
+data-condition="synthesize">综合</view>
+<view class="change" bindtap="changeCondition" data-condition="sales">销量</view>
+<view class="change" bindtap="changeCondition" data-condition="grade">价格
+<image class="priceL" src="{{srcl}}"></image>
+</view>
+<view class="change" bindtap="changeCondition" data-condition="price">好评率</view>
+</view>
+</view>
+
+  <view class="contentTR">
+
+      <view class="contentTD" wx:for="{{listData}}" >
+        <!-- 通过_id识别跳转 -->
+      <navigator class="navigatorClass" url="homeDetail/homeDetail?id={{item._id}}" hover-class="navigator-hover">
+    <!-- 图片 -->
+      <image class="contentIMG" src="{{item.imgPath}}" mode="scaleToFill"></image>
+     <!-- 标题 -->
+      <text class="contentTitle">{{item.title}}</text>
+      <text class="price">¥{{item.price}}元</text>
+     <!-- 描述 -->
+      <view class="contentTX">{{item.discription}} 
+     </view>
+     </navigator>
+     </view>
+
+</view>
